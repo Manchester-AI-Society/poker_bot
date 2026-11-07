@@ -1,0 +1,52 @@
+Final bot tests
+...........................                                              [100%]
+27 passed in 14.51s
+
+Full repository tests
+................................................................s...ss.. [ 17%]
+..........s.s........................................................... [ 34%]
+........................................................................ [ 51%]
+........................................................................ [ 68%]
+........................................................................ [ 85%]
+............................................................             [100%]
+415 passed, 5 skipped in 128.00s (0:02:07)
+
+Clean submission packaging
+Wrote /workspace/work/pocketaces-submission/pocketaces.pkl
+
+Playing your model against dummy bots...
+OK: played legally against every dummy.
+
+Upload these files in the form (all of them):
+  pocketaces.pkl
+  model.py
+  poker_eval.py
+
+Default evaluations
+opponents                       your bb/100  verdict   hands faults  slowest
+fold                         +63.6 ± 2.4       ahead    1000      0    0.04s
+call                        +283.7 ± 40.4      ahead    1000      0    0.17s
+random                      +124.6 ± 44.6      ahead    1000      0    0.14s
+shove                       +161.6 ± 78.1      ahead    1000      0    0.04s
+tight                        +38.5 ± 12.8      ahead    1000      0    0.13s
+equity                      +179.8 ± 35.0      ahead    1000      0    0.12s
+
+Requested 1000-deal evaluations, including table
+opponents                       your bb/100  verdict   hands faults  slowest
+tight                        +43.0 ± 8.7       ahead    2000      0    0.06s
+equity                      +163.4 ± 24.4      ahead    2000      0    0.23s
+table of 3                   +82.6 ± 19.0      ahead    3000      0    0.14s
+
+Untouched template baseline; same 1000-deal settings
+opponents                       your bb/100  verdict   hands faults  slowest
+tight                        -94.7 ± 24.1     behind    2000      0    0.00s
+equity                      -253.7 ± 27.9     behind    2000      0    0.00s
+table of 3                  -321.5 ± 32.7     behind    3000      0    0.03s
+
+Additional scenario validation
+120 hands, 2/3/6/9 players, swapped seats/buttons, stacks 7..2000 chips
+faults: 0 internal fallbacks: 0 slowest decision seconds: 0.07517
+post-play pickle vet: True globals: ['card_utils.Card', 'model.Model', 'random.Random'] findings: []
+
+Published ZIP download verified byte-for-byte, including all three submission files.
+ZIP SHA256: dcb6e5946cd70fe2077500908e8e8b887afad560495511d0d095ba42802b4e95
